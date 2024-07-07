@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const rammettoOne = localFont({
   src: [
-    { path: "./fonts/rammetto-one/rammettoOne-Regular.ttf", weight: "400" },
+    { path: "./fonts/rammetto-one/RammettoOne-Regular.ttf", weight: "400" },
   ],
   variable: "--font-rammetto-one",
 });
