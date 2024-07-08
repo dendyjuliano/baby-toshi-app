@@ -36,7 +36,7 @@ export default function Home() {
             WORLD
           </p>
         </div>
-        <Button label="GET AIR DROP" color="secondary" />
+        {/* <Button label="GET AIR DROP" color="secondary" /> */}
         <img src="/assets/btoshicto_bete.svg" alt="" />
       </section>
       <section className="bg-secondary-gradient flex py-[24px] md:px-[60px] px-[24px] md:gap-[166px] flex-col md:flex-row justify-center items-center md:h-[860px]">
@@ -110,7 +110,14 @@ export default function Home() {
           <p className="text-black text-[18px] md:text-[29px] text-center">
             CMEOW! Say it back!
           </p>
-          <Button label="BUY $BTOSHI" className="w-[200px]" />
+          <Button
+            label="BUY $BTOSHI"
+            className="w-[200px]"
+            onClick={() =>
+              // eslint-disable-next-line
+              openNewTab(process.env.NEXT_PUBLIC_TOSHI_URL as string)
+            }
+          />
           <div className="flex flex-col gap-3">
             <p className="text-black text-[18px] md:text-[29px] text-center">
               CA:
@@ -141,7 +148,14 @@ export default function Home() {
           <p className="text-white text-[18px] md:text-[29px] text-center">
             Its time for On Chain Summer
           </p>
-          <Button label="BUY $BTOSHI" className="w-[200px]" />
+          <Button
+            label="BUY $BTOSHI"
+            className="w-[200px]"
+            onClick={() =>
+              // eslint-disable-next-line
+              openNewTab(process.env.NEXT_PUBLIC_TOSHI_URL as string)
+            }
+          />
           <div className="flex gap-[48px]">
             <img
               src="/assets/logo-x.svg"
