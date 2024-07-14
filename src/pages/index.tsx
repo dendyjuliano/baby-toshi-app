@@ -271,6 +271,9 @@ export default function Home() {
                       </RoadMapLists>
                     ),
                   },
+                  {
+                    icon: <p>{null}</p>,
+                  },
                 ]}
               />
             )}
