@@ -16,6 +16,15 @@ export const CardTokenomic = ({
     </div>
   );
 };
+export const RoadMapLists = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div className="card-feature w-full px-8 bg-[#001366] border-8 border-white rounded-3xl text-[#0051DC] py-6 ">
+      <ul className="text-white list-disc max-w-[272px] flex flex-col gap-2">
+        {children}
+      </ul>
+    </div>
+  );
+};
 
 export default function Home() {
   const openNewTab = (link: string) => {
@@ -134,6 +143,76 @@ export default function Home() {
           className="w-[712px] absolute bottom-0 right-14 hidden md:block"
           alt=""
         />
+      </section>
+      <section className="bg-opacity-blue bg-[url('/assets/bg-social-media.jpg')] flex py-[24px] md:px-[60px] px-[24px] md:gap-[166px] flex-col md:flex-row  items-center md:h-[860px] relative">
+        <div className="z-10 relative flex py-[32px] px-6 md:px-[60px] w-full md:gap-[200px] justify-center items-center h-full md:flex-row flex-col">
+          <div className="flex flex-col gap-6 md:gap-[48px] items-center justify-center ">
+            <p className="md:text-hs text-[35px] text-secondary text-stroke text-center">
+              ROAD MAP
+            </p>
+            <p className="text-black text-[18px] md:text-[29px] text-center">
+              Launching Website, Community Engagement, Token Utility
+              Integration, Exchange Listings, Expanding Partnershhips, And
+              Global Adoption.
+            </p>
+            <div className="flex w-full gap-4">
+              <div className="flex flex-col gap-8 w-full">
+                <div className="flex w-full items-center gap-2">
+                  <div className="px-4 py-2 rounded-full bg-secondary">
+                    <p className="text-white">1</p>
+                  </div>
+                  <p className="text-white text-hm">Q2</p>
+                  <div className="border-b-4 border-secondary w-full" />
+                </div>
+                <div className="pl-10">
+                  <RoadMapLists>
+                    <li>Create a website</li>
+                    <li>
+                      Create new design for banner, logo, icon on dex profile
+                    </li>
+                    <li>Funds to update dex profile</li>
+                    <li>Funds to pay dex ads</li>
+                  </RoadMapLists>
+                </div>
+              </div>
+              <div className="flex flex-col gap-8 w-full">
+                <div className="flex w-full items-center gap-2">
+                  <div className="px-4 py-2 rounded-full bg-secondary">
+                    <p className="text-white">2</p>
+                  </div>
+                  <p className="text-white text-hm">Q3</p>
+                  <div className="border-b-4 border-secondary w-full" />
+                </div>
+                <div className="pl-10">
+                  <RoadMapLists>
+                    <li>Funds to pay base trending</li>
+                    <li>️Post for new social media</li>
+                    <li>Get more investors</li>
+                    <li>Create stickers for bitoshi</li>
+                    <li>Interact with influencers to promote our project</li>
+                    <li>Create NFT for our project</li>
+                  </RoadMapLists>
+                </div>
+              </div>
+              <div className="flex flex-col gap-8 w-full">
+                <div className="flex w-full items-center gap-2">
+                  <div className="px-4 py-2 rounded-full bg-secondary">
+                    <p className="text-white">3</p>
+                  </div>
+                  <p className="text-white text-hm">Q4</p>
+                  <div className="border-b-4 border-secondary w-full" />
+                </div>
+                <div className="pl-10">
+                  <RoadMapLists>
+                    <li>Listing on CoinGecko</li>
+                    <li>Listing on CoinMarketcap</li>
+                    <li>Listing on exchange</li>
+                  </RoadMapLists>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="bg-primary-gradient flex py-[24px] md:px-[60px] px-[24px] md:gap-[166px] gap-[48px] justify-center flex-col-reverse md:flex-row  items-center md:h-[860px] relative">
         <div className="flex flex-col gap-[32px] md:gap-[48px] md:w-[700px] items-center">
