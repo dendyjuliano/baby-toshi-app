@@ -230,7 +230,7 @@ export default function Home() {
                 items={[
                   {
                     icon: <p className="text-[16px] py-1 text-white">1</p>,
-                    // status: "process",
+
                     title: <p className="text-white">Q2</p>,
                     description: (
                       <RoadMapLists>

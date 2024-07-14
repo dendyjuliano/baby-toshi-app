@@ -50,5 +50,5 @@
   @apply !bg-secondary;
 }
 .ant-steps-item-tail::after {
-  @apply !bg-secondary;
+  @apply !w-1 !bg-secondary;
 }
