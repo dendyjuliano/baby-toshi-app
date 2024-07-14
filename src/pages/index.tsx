@@ -1,6 +1,7 @@
 import Button from "@src/shared/components/Button";
 import { Row, Col } from "antd";
 import { ThumbUp, Favorite, CheckCircle, Lock } from "@mui/icons-material";
+import useBreakpoint from "@src/shared/hooks/useBreakpoint";
 
 export const CardTokenomic = ({
   label,
@@ -27,6 +28,8 @@ export const RoadMapLists = ({ children }: { children: React.ReactNode }) => {
 };
 
 export default function Home() {
+  const { isDekstop } = useBreakpoint();
+
   const openNewTab = (link: string) => {
     window.open(link, "__blank");
   };
