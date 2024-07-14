@@ -42,3 +42,13 @@
 .break-words {
   overflow-wrap: break-word;
 }
+
+.ant-steps-item-icon {
+  @apply !bg-secondary;
+}
+.ant-steps-item-icon::after {
+  @apply !bg-secondary;
+}
+.ant-steps-item-tail::after {
+  @apply !bg-secondary;
+}

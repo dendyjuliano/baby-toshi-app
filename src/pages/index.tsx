@@ -1,6 +1,15 @@
 import Button from "@src/shared/components/Button";
-import { Row, Col } from "antd";
-import { ThumbUp, Favorite, CheckCircle, Lock } from "@mui/icons-material";
+import { Row, Col, Steps } from "antd";
+import {
+  ThumbUp,
+  Favorite,
+  CheckCircle,
+  Lock,
+  OneK,
+  LooksOne,
+  LooksOneOutlined,
+  LooksOutlined,
+} from "@mui/icons-material";
 import useBreakpoint from "@src/shared/hooks/useBreakpoint";
 
 export const CardTokenomic = ({
@@ -29,7 +38,6 @@ export const RoadMapLists = ({ children }: { children: React.ReactNode }) => {
 
 export default function Home() {
   const { isDekstop } = useBreakpoint();
-
   const openNewTab = (link: string) => {
     window.open(link, "__blank");
   };
@@ -158,62 +166,114 @@ export default function Home() {
               Integration, Exchange Listings, Expanding Partnershhips, And
               Global Adoption.
             </p>
-            <div className="flex w-full gap-4">
-              <div className="flex flex-col gap-8 w-full">
-                <div className="flex w-full items-center gap-2">
-                  <div className="px-4 py-2 rounded-full bg-secondary">
-                    <p className="text-white">1</p>
+            {isDekstop ? (
+              <div className="flex w-full gap-4">
+                <div className="flex flex-col gap-8 w-full">
+                  <div className="flex w-full items-center gap-2">
+                    <div className="px-4 py-2 rounded-full bg-secondary">
+                      <p className="text-white">1</p>
+                    </div>
+                    <p className="text-white text-hm">Q2</p>
+                    <div className="border-b-4 border-secondary w-full" />
                   </div>
-                  <p className="text-white text-hm">Q2</p>
-                  <div className="border-b-4 border-secondary w-full" />
+                  <div className="pl-10">
+                    <RoadMapLists>
+                      <li>Create a website</li>
+                      <li>
+                        Create new design for banner, logo, icon on dex profile
+                      </li>
+                      <li>Funds to update dex profile</li>
+                      <li>Funds to pay dex ads</li>
+                    </RoadMapLists>
+                  </div>
                 </div>
-                <div className="pl-10">
-                  <RoadMapLists>
-                    <li>Create a website</li>
-                    <li>
-                      Create new design for banner, logo, icon on dex profile
-                    </li>
-                    <li>Funds to update dex profile</li>
-                    <li>Funds to pay dex ads</li>
-                  </RoadMapLists>
+                <div className="flex flex-col gap-8 w-full">
+                  <div className="flex w-full items-center gap-2">
+                    <div className="px-4 py-2 rounded-full bg-secondary">
+                      <p className="text-white">2</p>
+                    </div>
+                    <p className="text-white text-hm">Q3</p>
+                    <div className="border-b-4 border-secondary w-full" />
+                  </div>
+                  <div className="pl-10">
+                    <RoadMapLists>
+                      <li>Funds to pay base trending</li>
+                      <li>️Post for new social media</li>
+                      <li>Get more investors</li>
+                      <li>Create stickers for bitoshi</li>
+                      <li>Interact with influencers to promote our project</li>
+                      <li>Create NFT for our project</li>
+                    </RoadMapLists>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-8 w-full">
+                  <div className="flex w-full items-center gap-2">
+                    <div className="px-4 py-2 rounded-full bg-secondary">
+                      <p className="text-white">3</p>
+                    </div>
+                    <p className="text-white text-hm">Q4</p>
+                    <div className="border-b-4 border-secondary w-full" />
+                  </div>
+                  <div className="pl-10">
+                    <RoadMapLists>
+                      <li>Listing on CoinGecko</li>
+                      <li>Listing on CoinMarketcap</li>
+                      <li>Listing on exchange</li>
+                    </RoadMapLists>
+                  </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-8 w-full">
-                <div className="flex w-full items-center gap-2">
-                  <div className="px-4 py-2 rounded-full bg-secondary">
-                    <p className="text-white">2</p>
-                  </div>
-                  <p className="text-white text-hm">Q3</p>
-                  <div className="border-b-4 border-secondary w-full" />
-                </div>
-                <div className="pl-10">
-                  <RoadMapLists>
-                    <li>Funds to pay base trending</li>
-                    <li>️Post for new social media</li>
-                    <li>Get more investors</li>
-                    <li>Create stickers for bitoshi</li>
-                    <li>Interact with influencers to promote our project</li>
-                    <li>Create NFT for our project</li>
-                  </RoadMapLists>
-                </div>
-              </div>
-              <div className="flex flex-col gap-8 w-full">
-                <div className="flex w-full items-center gap-2">
-                  <div className="px-4 py-2 rounded-full bg-secondary">
-                    <p className="text-white">3</p>
-                  </div>
-                  <p className="text-white text-hm">Q4</p>
-                  <div className="border-b-4 border-secondary w-full" />
-                </div>
-                <div className="pl-10">
-                  <RoadMapLists>
-                    <li>Listing on CoinGecko</li>
-                    <li>Listing on CoinMarketcap</li>
-                    <li>Listing on exchange</li>
-                  </RoadMapLists>
-                </div>
-              </div>
-            </div>
+            ) : (
+              <Steps
+                direction="vertical"
+                current={2}
+                items={[
+                  {
+                    icon: <p className="text-[16px] py-1 text-white">1</p>,
+                    // status: "process",
+                    title: <p className="text-white">Q2</p>,
+                    description: (
+                      <RoadMapLists>
+                        <li>Create a website</li>
+                        <li>
+                          Create new design for banner, logo, icon on dex
+                          profile
+                        </li>
+                        <li>Funds to update dex profile</li>
+                        <li>Funds to pay dex ads</li>
+                      </RoadMapLists>
+                    ),
+                  },
+                  {
+                    icon: <p className="text-[16px] py-1 text-white">2</p>,
+                    title: <p className="text-white">Q3</p>,
+                    description: (
+                      <RoadMapLists>
+                        <li>Funds to pay base trending</li>
+                        <li>️Post for new social media</li>
+                        <li>Get more investors</li>
+                        <li>Create stickers for bitoshi</li>
+                        <li>
+                          Interact with influencers to promote our project
+                        </li>
+                        <li>Create NFT for our project</li>
+                      </RoadMapLists>
+                    ),
+                  },
+                  {
+                    icon: <p className="text-[16px] py-1 text-white">3</p>,
+                    title: <p className="text-white">Q4</p>,
+                    description: (
+                      <RoadMapLists>
+                        <li>Listing on CoinGecko</li>
+                        <li>Listing on CoinMarketcap</li>
+                        <li>Listing on exchange</li>
+                      </RoadMapLists>
+                    ),
+                  },
+                ]}
+              />
+            )}
           </div>
         </div>
       </section>
