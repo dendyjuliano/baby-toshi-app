@@ -144,7 +144,7 @@ export default function Home() {
             </p>
             <div className="border-8 border-black rounded-full py-[12px] px-[24px] md:w-[400px] w-[300px]">
               <p className="break-words text-center">
-                0x3a4ae78ebb5caad5d704c2fdaf19917c203bdfa3
+                0x3A4Ae78EbB5caAD5d704C2FDAf19917C203bDfa3
               </p>
             </div>
           </div>
@@ -322,12 +322,23 @@ export default function Home() {
             />
           </div>
         </div>
-        <p className="md:text-[112px] text-[42px] text-secondary text-stroke text-center">
-          CRYPTO SUMMER
-        </p>
+        <iframe
+          src="https://app.uniswap.org/#/swap?outputCurrency=0x3A4Ae78EbB5caAD5d704C2FDAf19917C203bDfa3"
+          height="500px"
+          width="100%"
+          style={{
+            border: 0,
+            margin: "0 auto",
+            display: "block",
+            borderRadius: 10,
+            maxWidth: 600,
+            minWidth: 300,
+            zIndex: 20,
+          }}
+        />
         <img
           src="/assets/btoshicto_cool.png"
-          className="absolute bottom-0 right-14 hidden md:block"
+          className="absolute bottom-0 right-14 hidden md:block z-10"
           alt=""
         />
       </section>
