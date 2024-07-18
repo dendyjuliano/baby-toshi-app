@@ -93,14 +93,22 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-12 gap-2">
               <img
-                src="/assets/BToshi-3d-2.png"
+                src="/assets/btoshi-art-1.png"
                 alt=""
                 className="col-span-6"
               />
-              <img src="/assets/BToshi-3d.png" alt="" className="col-span-6" />
-              <img src="/assets/BTshi-3d-3.png" alt="" className="col-span-6" />
               <img
-                src="/assets/CToshi-toshi-Btoshi.png"
+                src="/assets/btoshi-art-2.png"
+                alt=""
+                className="col-span-6"
+              />
+              <img
+                src="/assets/btoshi-art-3.png"
+                alt=""
+                className="col-span-6"
+              />
+              <img
+                src="/assets/btoshi-art-4.png"
                 alt=""
                 className="col-span-6"
               />
