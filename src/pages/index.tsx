@@ -80,6 +80,40 @@ export default function Home() {
         <img src="/assets/btoshicto_money.svg" alt="" />
       </section>
       <div className="relative">
+        <section className="bg-primary-gradient md:h-[860px]">
+          <div className="z-10 relative flex py-[32px] px-6 md:px-[60px] w-full md:gap-[200px] justify-center items-center h-full md:flex-row flex-col">
+            <div className="flex flex-col gap-6 md:gap-[48px] items-center justify-center md:max-w-[500px]">
+              <p className="md:text-hs text-[35px] text-secondary text-stroke text-center">
+                NFT BITOSHI
+              </p>
+              <p className="text-white text-[18px] md:text-[29px]">
+                Discover NFT BToshis, a collection of extraordinary NFTs
+                inspired by Brian Armstrong&apos;s Pet Cat Toshi
+              </p>
+            </div>
+            <div className="grid grid-cols-12 gap-2">
+              <img
+                src="/assets/BToshi-3d-2.png"
+                alt=""
+                className="col-span-6"
+              />
+              <img src="/assets/BToshi-3d.png" alt="" className="col-span-6" />
+              <img src="/assets/BTshi-3d-3.png" alt="" className="col-span-6" />
+              <img
+                src="/assets/CToshi-toshi-Btoshi.png"
+                alt=""
+                className="col-span-6"
+              />
+            </div>
+          </div>
+          <img
+            src="/assets/pngwing.com 1.png"
+            className="absolute bottom-0 left-24 hidden md:block"
+            alt=""
+          />
+        </section>
+      </div>
+      <div className="relative">
         <section className="bg-opacity-blue bg-[url('/assets/bg-social-media.jpg')] md:h-[860px] bg-cover bg-no-repeat">
           <div className="z-10 relative flex py-[32px] px-6 md:px-[60px] w-full md:gap-[200px] justify-center items-center h-full md:flex-row flex-col">
             <div className="flex flex-col gap-6 md:gap-[48px] items-center justify-center md:max-w-[500px]">
