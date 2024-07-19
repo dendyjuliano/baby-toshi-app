@@ -81,7 +81,7 @@ export default function Home() {
       </section>
       <div className="relative">
         <section className="bg-primary-gradient md:h-[860px]">
-          <div className="z-10 relative flex py-[32px] px-6 md:px-[60px] w-full md:gap-[200px] justify-center items-center h-full md:flex-row flex-col">
+          <div className="z-10 relative flex gap-10 py-[32px] px-6 md:px-[60px] w-full md:gap-[200px] justify-center items-center h-full md:flex-row flex-col">
             <div className="flex flex-col gap-6 md:gap-[48px] justify-center md:max-w-[500px]">
               <p className="md:text-hs text-[35px] text-secondary text-stroke text-center">
                 NFT BITOSHI
@@ -90,7 +90,7 @@ export default function Home() {
                 Discover NFT BToshis, a collection of extraordinary NFTs
                 inspired by Brian Armstrong&apos;s Pet Cat Toshi
               </p>
-              <div className="!flex !items-start">
+              <div className="md:block flex items-center justify-center">
                 <Button
                   label="LINK TO COLLECTION"
                   className="!bg-secondary styleBTN"
@@ -101,6 +101,7 @@ export default function Home() {
                 />
               </div>
             </div>
+
             <div className="grid grid-cols-12 gap-2">
               <img
                 src="/assets/btoshi-art-1.png"
