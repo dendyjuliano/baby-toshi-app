@@ -82,9 +82,14 @@ export default function Home() {
       <div className="relative">
         <section className="bg-primary-gradient md:h-[860px]">
           <div className="z-10 relative flex gap-10 py-[32px] px-6 md:px-[60px] w-full md:gap-[200px] justify-center items-center h-full md:flex-row flex-col">
-            <div className="flex flex-col gap-6 md:gap-[48px] justify-center md:max-w-[500px]">
-              <p className="md:text-hs text-[35px] text-secondary text-stroke text-center">
-                NFT BITOSHI
+            <div className="flex flex-col gap-6 md:gap-[48px] md:max-w-[500px] relative h-full justify-center">
+              <img
+                src="/assets/star.png"
+                alt=""
+                className="absolute top-0 right-0 md:w-auto w-16"
+              />
+              <p className="md:text-hs text-[35px] text-secondary text-stroke">
+                NFT BTOSHI
               </p>
               <p className="text-white text-[18px] md:text-[29px]">
                 Discover NFT BToshis, a collection of extraordinary NFTs
