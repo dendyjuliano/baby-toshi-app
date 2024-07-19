@@ -52,3 +52,7 @@
 .ant-steps-item-tail::after {
   @apply !w-1 !bg-secondary;
 }
+
+.styleBTN {
+  box-shadow: 0 6px 0 1px #c85500 !important;
+}
